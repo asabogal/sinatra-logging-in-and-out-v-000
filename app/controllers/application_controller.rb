@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/logout' do
-    session[:user_id].clear
+    session[:user_id] = {}
   end
 
 
