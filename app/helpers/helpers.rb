@@ -1,7 +1,7 @@
-require 'sinatra/base'
+# require 'sinatra/base'
 class Helpers
 
-  def current_user(session)
+  def self.current_user(session)
     @user = User.find_by(session[:user_id])
     @user
   end
